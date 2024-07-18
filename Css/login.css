@@ -1,0 +1,18 @@
+#header {
+    background-color: transparent; 
+    position: relative;
+    z-index: 2;
+
+    .navbar-brand img {
+        max-width: 100%;
+    }
+    
+    .navbar-brand span {
+        font-size: 35px;
+        font-weight: bold;
+    }
+    
+    .navicon:hover {
+        background-color: #607ff2;
+    }
+}
