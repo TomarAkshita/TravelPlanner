@@ -1,0 +1,234 @@
+/* body css */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* header css */
+#header {
+    background-color: #182a6b;
+
+    .navbar-brand img {
+        max-width: 100%;
+    }
+
+    .navbar-brand span {
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .navicon:hover {
+        background-color: #607ff2;
+    }
+}
+
+/* add destination css */
+#background-container {
+    position: relative;
+    width: 100%;
+    min-height: 125vh; 
+    background: url('/Images/trip.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex; 
+    align-items: center;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(24, 42, 107, 0.678);
+}
+
+.third_part {
+    position: relative;
+    z-index: 10;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+.container.third_part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sectionAdd{
+    text-align: center;
+    color:white ;
+
+    #adding{
+        font-size: 38px;
+    }
+
+    h2#adding::after{
+        content: "";
+        display: block;
+        width: 150px;
+        height: 4px;
+        background-color: #FFA500;
+        margin: 15px auto;
+    }
+}
+#DestinationForm{
+    color: #FFA500;
+    font-size: 19px;
+
+    .invalid-feedback {
+        color: rgb(255, 8, 8);
+        display: none;
+    }
+
+    .dclass{
+        border: 2px solid #FFA500;
+    }
+
+    .btne{
+        background-color: white;
+        color: #182a6b ;
+        border: 2px solid #FFA500;
+        width: 50%;
+        font-size: 19px;
+    }
+
+    .btne:hover{
+        background-color: #FFA500;
+        color:  #182a6b;
+        border: 2px solid #182a6b;
+    }
+}
+
+/* destination list css */
+#fourth_part{
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .filter{
+        padding-top: 10px;
+        font-size: 19px;
+        color: #000102;
+    }
+
+    .fclass{
+        border: 2px solid #FFA500;
+    }
+
+    .fbutton{
+        /* vertical-align: bottom; */
+        padding-top: 10px;
+    }
+
+    .fbtne{
+        color: #182a6b;
+        border: 2px solid #FFA500;
+    }
+
+    .fbtne:hover{
+        background-color: #FFA500;
+        border: 2px solid #182a6b;
+    }
+}
+.sectionShow{
+    text-align: center;
+    color:#000102 ;
+
+    #adding{
+        font-size: 38px;
+    }
+
+    h2#adding::after{
+        content: "";
+        display: block;
+        width: 150px;
+        height: 4px;
+        background-color: #182a6b;
+        margin: 15px auto;
+    }
+}
+.item {
+    width: 50%;
+    background-color: #f2b646;
+    border: 2px solid #182a6b;
+    margin-bottom: 10px;
+
+    th{ 
+        padding-top: 15px;
+        padding-left: 15px;
+        font-size: 25px;
+        font-weight: 900;
+    }
+
+    .thd{
+        padding-left: 15px;
+    }
+
+    div{
+        padding-left: 15px;
+        padding-bottom: 5px;
+    }
+
+    button {
+        background-color: #182e6b;
+        color: white;
+        border: none;
+    }
+
+    button:hover {
+        background-color: white;
+        color: #182a6b;
+        border: 2px solid #182a6b;
+    }
+}
+
+/* footer css */
+#footer{
+    position: relative;
+    background-image: url('/Images/foot.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+    .footContent{
+        position: relative;
+        z-index: 2;
+        text-align: center;
+    }
+
+    .footContent h2{
+        font-size: 55px;
+    }
+
+    .footContent p{
+        font-size: 20px;
+    }
+    .footContent span{
+        color: #FFA500;
+        font-size: 28px;
+    }
+
+    .footCont{
+        position: relative;
+        z-index: 2;
+        text-align: left;
+    }
+}
+#footer::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(24, 42, 107, 0.678); 
+    z-index: 1;
+}
+.foot_two{
+    text-align: end;
+    font-size: 30px;
+}

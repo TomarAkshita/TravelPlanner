@@ -1,0 +1,190 @@
+/* body styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Header styles */
+#header {
+    background-color: transparent; 
+    position: relative;
+    z-index: 2;
+
+    .navbar-brand img {
+        max-width: 100%;
+    }
+    
+    .navbar-brand span {
+        font-size: 35px;
+        font-weight: bold;
+    }
+    
+    .navicon:hover {
+        background-color: #607ff2;
+    }
+}
+
+/* Slide styles */
+#slide {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 100px); 
+    background-image: url('/Images/explore.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    margin-top: -110px;
+
+    .text-overlay {
+        position: relative;
+        z-index: 2;
+    }
+    
+    .text-overlay span{
+        color:  #FFA500;  /* Coral (#FF7F50): #FFA500 #FFD700 */
+        font-size: 50px;
+    }
+}
+
+#slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(24, 42, 107, 0.678); 
+    z-index: 1;
+}
+
+/* tour places styles */
+#places{
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .rowcity{
+        padding-top: 30px;
+    }
+
+    h4 span{
+        color: #182a6b;
+    }
+
+    .colcity{
+        background-color: #f2b646;
+        padding-bottom: 10px;
+    }
+}
+.section{
+    text-align: center;
+
+    h1.adding::after{
+        content: "";
+        display: block;
+        width: 150px;
+        height: 4px;
+        background-color:  #182a6b;
+        margin: 15px auto;
+    }
+}
+
+.card {
+    position: relative;
+    /* width: 18rem; */
+    overflow: hidden;
+
+    .card-img-top {
+        transition: opacity 0.3s ease;
+    }
+    
+    .card-img-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(24, 42, 107, 0.422);
+        color: white;
+        transition: all 0.3s ease;
+        opacity: 1;
+    }
+}
+.card:hover .card-img-overlay {
+    height: auto;
+    bottom: 0;
+    top: auto;
+    background-color: #182a6b;
+    color: #FFA500;
+}
+.card:hover .card-img-top {
+    opacity: 1;
+}
+a.city{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+a.city:hover{
+    color: #182a6b;
+    font-size: 18px;
+}
+
+/* trending places styles */
+#trending{
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+    .trendcity{
+        padding-top: 20px;
+    }
+}
+
+/* footer styles */
+#footer{
+    position: relative;
+    background-image: url('/Images/foot.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+    .footContent{
+        position: relative;
+        z-index: 2;
+        text-align: center;
+    }
+
+    .footContent h2{
+        font-size: 55px;
+    }
+
+    .footContent p{
+        font-size: 20px;
+    }
+    .footContent span{
+        color: #FFA500;
+        font-size: 28px;
+    }
+
+    .footCont{
+        position: relative;
+        z-index: 2;
+        text-align: left;
+    }
+}
+#footer::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(24, 42, 107, 0.678); 
+    z-index: 1;
+}
+.foot_two{
+    text-align: end;
+    font-size: 30px;
+}
