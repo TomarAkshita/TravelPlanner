@@ -1,11 +1,11 @@
-/* body styles */
+/* body css */
 * {
     margin: 0;
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/* Header styles */
+/* Header css */
 #header {
     background-color: transparent; 
     position: relative;
@@ -25,7 +25,7 @@
     }
 }
 
-/* Slide styles */
+/* Slide css */
 #slide {
     position: relative;
     width: 100%;
@@ -59,7 +59,7 @@
     z-index: 1;
 }
 
-/* tour places styles */
+/* tour places css */
 #places{
     padding-top: 30px;
     padding-bottom: 30px;
@@ -130,7 +130,7 @@ a.city:hover{
     font-size: 18px;
 }
 
-/* trending places styles */
+/* trending places css */
 #trending{
     padding-top: 30px;
     padding-bottom: 20px;
@@ -140,7 +140,7 @@ a.city:hover{
     }
 }
 
-/* footer styles */
+/* footer css */
 #footer{
     position: relative;
     background-image: url('/Images/foot.png');
