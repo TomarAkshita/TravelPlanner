@@ -28,7 +28,7 @@
     position: relative;
     width: 100%;
     min-height: 125vh; 
-    background: url('/Images/trip.jpg') no-repeat center center;
+    background: url('/images/trip.jpg') no-repeat center center;
     background-size: cover;
     display: flex; 
     align-items: center;
@@ -187,7 +187,7 @@
 /* footer css */
 #footer{
     position: relative;
-    background-image: url('/Images/foot.png');
+    background-image: url('/images/foot.png');
     background-size: cover;
     background-position: center;
     color: white;

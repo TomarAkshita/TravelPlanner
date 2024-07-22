@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded',()=>{
     
     const bgContainer = document.getElementById('background-container');
-    const defaultImage = '/Images/trip.jpg'; 
+    const defaultImage = '/images/trip.jpg'; 
     
     const params = new URLSearchParams(window.location.search);
     const bgImage = params.get('bgImage') || defaultImage;
