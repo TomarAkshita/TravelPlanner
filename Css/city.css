@@ -1,0 +1,143 @@
+/* body css */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* header css */
+#header {
+    background-color: #182a6b;
+
+    .navbar-brand img {
+        max-width: 100%;
+    }
+
+    .navbar-brand span {
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .navicon:hover {
+        background-color: #607ff2;
+    }
+}
+
+/* main css */
+.head{
+    color: #182a6b;
+}
+#main{
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    .head span{
+        color:  #FFA500;
+        font-size: 40px;
+    }
+
+    .heading{
+        font-size: 19px;
+    }
+
+    .box{
+        border:#FFA500 4px solid;
+        padding: 5px;
+        text-align: center;
+        margin-bottom: 50px;
+
+        .btne{
+            background-color:#FFA500;
+            color: #182a6b;
+        }
+    }
+
+    .btne:hover{
+        background-color: white;
+        border: 2px solid #FFA500;
+    }
+
+    .card {
+        position: relative;
+        overflow: hidden;
+    
+        .card-img-top {
+            transition: opacity 0.3s ease;
+        }
+        
+        .card-img-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(24, 42, 107, 0.422);
+            color: white;
+            transition: all 0.3s ease;
+            opacity: 1;
+        }
+    }
+}
+
+/* tour css */
+#tour{
+    padding-bottom: 30px;
+
+    .section{
+        padding: 10px;
+    }
+
+    .card{
+        box-shadow: 0 4px 8px #FFA500;
+        border-radius: 8px;
+    }
+}
+
+/* footer css */
+#footer{
+    position: relative;
+    background-image: url('/images/foot.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+    .footContent{
+        position: relative;
+        z-index: 2;
+        text-align: center;
+    }
+
+    .footContent h2{
+        font-size: 55px;
+    }
+
+    .footContent p{
+        font-size: 20px;
+    }
+    .footContent span{
+        color: #FFA500;
+        font-size: 28px;
+    }
+
+    .footCont{
+        position: relative;
+        z-index: 2;
+        text-align: left;
+    }
+}
+#footer::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(24, 42, 107, 0.678); 
+    z-index: 1;
+}
+.foot_two{
+    text-align: end;
+    font-size: 30px;
+}
