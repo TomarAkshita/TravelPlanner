@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* header css */
@@ -27,7 +27,6 @@
 #background-container {
     position: relative;
     width: 100%;
-    min-height: 125vh; 
     background: url('/images/trip.jpg') no-repeat center center;
     background-size: cover;
     display: flex; 
@@ -46,9 +45,13 @@
 .third_part {
     position: relative;
     z-index: 10;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 100%;
+
+    #button{
+        vertical-align: text-bottom;
+    }
 }
 
 .container.third_part {
@@ -77,6 +80,7 @@
 #DestinationForm{
     color: #FFA500;
     font-size: 19px;
+    font-weight: 700;
 
     .invalid-feedback {
         color: rgb(255, 8, 8);
@@ -107,6 +111,10 @@
     padding-top: 30px;
     padding-bottom: 30px;
 
+    .filt{
+        text-align: end;
+    }
+
     .filter{
         padding-top: 10px;
         font-size: 19px;
@@ -133,7 +141,6 @@
     }
 }
 .sectionShow{
-    text-align: center;
     color:#000102 ;
 
     #adding{
@@ -146,8 +153,9 @@
         width: 150px;
         height: 4px;
         background-color: #182a6b;
-        margin: 15px auto;
+        margin-left: 7%;
     }
+
 }
 .item {
     width: 50%;

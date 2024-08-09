@@ -9,7 +9,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <!-- <script src="/Js/script1.js"></script> -->
 </head>
 <body>
     <!-- header part -->
@@ -21,10 +20,35 @@
                         <img src="/images/logo.png" alt="Logo" width="90" height="80">
                         <span class="ms-2">Travel Planner</span>
                     </a>
-                    <div class="navbar-nav ms-auto">
-                        <a class="nav-link me-3 text-white navicon" href="/pages/tripPlanner.html"><i class="fa-solid fa-pen-to-square"></i> Trip Planner</a>
-                        <a class="nav-link me-3 text-white navicon" href="/pages/index.html"><i class="fa-solid fa-house"></i> Home</a>
-                        <a class="nav-link me-3 text-white navicon" href="/pages/login.html"><i class="fa-solid fa-user"></i> Login</a>  
+                    <button class="navbar-toggler text-white" id="toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" aria-current="page" href="/pages/tripPlanner.html"><i class="fa-solid fa-pen-to-square"></i> Trip Planner</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="/pages/index.html"><i class="fa-solid fa-house"></i> Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-location-dot"></i> Place to visit
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#africa">Africa</a></li>
+                                    <li><a class="dropdown-item" href="#asia">Asia</a></li>
+                                    <li><a class="dropdown-item" href="#europe">Europe</a></li>
+                                    <li><a class="dropdown-item" href="#north">North America</a></li>
+                                    <li><a class="dropdown-item" href="#oceania">Oceania</a></li>
+                                    <li><a class="dropdown-item" href="#south">South America</a></li>
+                                    <li><a class="dropdown-item" href="#trend">Trending Attractions</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="/pages/login.html"><i class="fa-solid fa-user"></i> Login</a>
+                            </li>
+                        </ul>    
                     </div>
                 </nav>
             </div>
@@ -34,7 +58,7 @@
     <!-- slide part -->
     <div id="slide" class="d-flex align-items-center justify-content-center text-center">
         <div class="text-overlay">
-            <h1>Book <span>Tours</span> and Activities for your <span>next</span> trip!</h1>
+            <h1><b>Book <span>Tours</span> and Activities for your <span>next</span> trip!</b></h1>
             <p>Let's make your next trip easy...</p>
         </div>
     </div>
@@ -43,11 +67,11 @@
     <div id="places">
         <div class="container">
             <div class="row section">
-                <h1 class="adding">Top Tourist Destinations</h1>
+                <h1 class="adding"><b>Top Tourist Destinations</b></h1>
             </div>
             <!-- 1st row -->
-            <div class="row rowcity">
-                <h4>Places to visit in <span>North America</span></h4>
+            <div class="row rowcity" id="north">
+                <h4>Places to visit in <span><b>North America</b></span></h4>
                 <div class="col-3">
                     <div class="colcity">
                         <div class="card">
@@ -107,8 +131,8 @@
             </div>
 
             <!-- 2nd row -->
-            <div class="row rowcity">
-                <h4>Places to visit in <span>Europe</span></h4>
+            <div class="row rowcity" id="europe">
+                <h4>Places to visit in <span><b>Europe</b></span></h4>
                 <div class="col-3">
                     <div class="colcity">
                         <div class="card">
@@ -168,8 +192,8 @@
             </div>
 
             <!-- 3rd row -->
-            <div class="row rowcity">
-                <h4>Places to visit in <span>Asia</span></h4>
+            <div class="row rowcity" id="asia">
+                <h4>Places to visit in <span><b>Asia</b></span></h4>
                 <div class="col-3">
                     <div class="colcity">
                         <div class="card">
@@ -229,8 +253,8 @@
             </div>
 
             <!-- 4th row -->
-            <div class="row rowcity">
-                <h4>Places to visit in <span>Oceania</span></h4>
+            <div class="row rowcity" id="oceania">
+                <h4>Places to visit in <span><b>Oceania</b></span></h4>
                 <div class="col-3">
                     <div class="colcity">
                         <div class="card">
@@ -290,8 +314,8 @@
             </div>
 
             <!-- 5th row -->
-            <div class="row rowcity">
-                <h4>Places to visit in <span>South America</span></h4>
+            <div class="row rowcity" id="south">
+                <h4>Places to visit in <span><b>South America</b></span></h4>
                 <div class="col-3">
                     <div class="colcity">
                         <div class="card">
@@ -351,8 +375,8 @@
             </div>
 
             <!-- 6th row -->
-            <div class="row rowcity">
-                <h4>Places to visit in <span>Africa</span></h4>
+            <div class="row rowcity" id="africa">
+                <h4>Places to visit in <span><b>Africa</b></span></h4>
                 <div class="col-3">
                     <div class="colcity">
                         <div class="card">
@@ -416,48 +440,40 @@
     <!-- trending places -->
     <div id="trending">
         <div class="container">
-            <div class="row section">
-                <h1 class="adding">Trending Attractions</h1>
+            <div class="row section" id="trend">
+                <h1 class="adding"><b>Trending Attractions</b></h1>
             </div>
             <!-- 1st row -->
             <div class="row trendcity">
                 <div class="col-3">
-                    <div class="colcity">
-                        <div class="card">
-                            <img src="/images/trend1.jpg" class="card-img-top" alt="...">
-                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
-                                <a class="nav-link" href="/pages/tripPlanner.html?bgImage=/images/trend1.jpg">IFLY Orlando, Orlando</a>
-                            </div>
+                    <div class="card">
+                        <img src="/images/trend1.jpg" class="card-img-top" alt="...">
+                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                            <a class="nav-link" href="/pages/tripPlanner.html?bgImage=/images/trend1.jpg">IFLY Orlando, Orlando</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="colcity">
-                        <div class="card">
-                            <img src="/images/trend2.jpg" class="card-img-top" alt="...">
-                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
-                                <a class="nav-link" href="/pages/tripPlanner.html?bgImage=/images/trend2.jpg">Blackfriars Bridge, London</a>
-                            </div>
+                    <div class="card">
+                        <img src="/images/trend2.jpg" class="card-img-top" alt="...">
+                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                            <a class="nav-link" href="/pages/tripPlanner.html?bgImage=/images/trend2.jpg">Blackfriars Bridge, London</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="colcity">
-                        <div class="card">
-                            <img src="/images/trend3.jpg" class="card-img-top" alt="...">
-                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
-                                <a class="nav-link" href="/pages/tripPlanner.html?bgImage=/images/trend3.jpg">The Ibsen Museum, Oslo</a>
-                            </div>
+                    <div class="card">
+                        <img src="/images/trend3.jpg" class="card-img-top" alt="...">
+                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                            <a class="nav-link" href="/pages/tripPlanner.html?bgImage=/images/trend3.jpg">The Ibsen Museum, Oslo</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="colcity">
-                        <div class="card">
-                            <img src="/images/trend4.jpg" class="card-img-top" alt="...">
-                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
-                                <a class="nav-link" href="/pages/tripPlanner.html?bgImage=/images/trend4.jpg">Peak To Creek, Whistler</a>
-                            </div>
+                    <div class="card">
+                        <img src="/images/trend4.jpg" class="card-img-top" alt="...">
+                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                            <a class="nav-link" href="/pages/tripPlanner.html?bgImage=/images/trend4.jpg">Peak To Creek, Whistler</a>
                         </div>
                     </div>
                 </div>
@@ -466,86 +482,70 @@
             <!-- 2nd row -->
             <div class="row trendcity">
                 <div class="col-3">
-                    <div class="colcity">
-                        <div class="card">
-                            <img src="/images/trend5.jpg" class="card-img-top" alt="...">
-                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
-                                <a class="nav-link" href="/pages/tripPlanner.html?bgImage=/images/trend5.jpg">River Park Square, Spokane</a>
-                            </div>
+                    <div class="card">
+                        <img src="/images/trend5.jpg" class="card-img-top" alt="...">
+                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                            <a class="nav-link" href="/pages/tripPlanner.html?bgImage=/images/trend5.jpg">River Park Square, Spokane</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="colcity">
-                        <div class="card">
-                            <img src="/images/trend6.jpg" class="card-img-top" alt="...">
-                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
-                                <a class="nav-link" href="/pages/tripPlanner.html?bgImage=/images/trend6.jpg">Vgp Golden Beach, Chennai</a>
-                            </div>
+                    <div class="card">
+                        <img src="/images/trend6.jpg" class="card-img-top" alt="...">
+                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                            <a class="nav-link" href="/pages/tripPlanner.html?bgImage=/images/trend6.jpg">Vgp Golden Beach, Chennai</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="colcity">
-                        <div class="card">
-                            <img src="/images/trend7.jpg" class="card-img-top" alt="...">
-                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
-                                <a class="nav-link" href="/pages/tripPlanner.html?bgImage=/images/trend7.jpg">Art News Cafe, Plovdiv</a>
-                            </div>
+                    <div class="card">
+                        <img src="/images/trend7.jpg" class="card-img-top" alt="...">
+                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                            <a class="nav-link" href="/pages/tripPlanner.html?bgImage=/images/trend7.jpg">Art News Cafe, Plovdiv</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="colcity">
-                        <div class="card">
-                            <img src="/images/trend8.jpg" class="card-img-top" alt="...">
-                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
-                                <a class="nav-link" href="/pages/tripPlanner.html?bgImage=/images/trend8.jpg">Rhea Stadium, Russeilville</a>
-                            </div>
+                    <div class="card">
+                        <img src="/images/trend8.jpg" class="card-img-top" alt="...">
+                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                            <a class="nav-link" href="/pages/tripPlanner.html?bgImage=/images/trend8.jpg">Rhea Stadium, Russeilville</a>
                         </div>
                     </div>
-                </div>
+                </div>    
             </div>
 
             <!-- 3rd row -->
             <div class="row trendcity">
                 <div class="col-3">
-                    <div class="colcity">
-                        <div class="card">
-                            <img src="/images/trend9.jpg" class="card-img-top" alt="...">
-                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
-                                <a class="nav-link" href="/pages/tripPlanner.html?bgImage=/images/trend9.jpg">Ajanta Caves, Aurangabad</a>
-                            </div>
+                    <div class="card">
+                        <img src="/images/trend9.jpg" class="card-img-top" alt="...">
+                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                            <a class="nav-link" href="/pages/tripPlanner.html?bgImage=/images/trend9.jpg">Ajanta Caves, Aurangabad</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="colcity">
-                        <div class="card">
-                            <img src="/images/trend10.jpg" class="card-img-top" alt="...">
-                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
-                                <a class="nav-link" href="/pages/tripPlanner.html?bgImage=/images/trend10.jpg">Machu Picchu, Peru</a>
-                            </div>
+                    <div class="card">
+                        <img src="/images/trend10.jpg" class="card-img-top" alt="...">
+                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                            <a class="nav-link" href="/pages/tripPlanner.html?bgImage=/images/trend10.jpg">Machu Picchu, Peru</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="colcity">
-                        <div class="card">
-                            <img src="/images/trend11.jpg" class="card-img-top" alt="...">
-                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
-                                <a class="nav-link" href="/pages/tripPlanner.html?bgImage=/images/trend11.jpg">Iguazú Falls, Argentina</a>
-                            </div>
+                    <div class="card">
+                        <img src="/images/trend11.jpg" class="card-img-top" alt="...">
+                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                            <a class="nav-link" href="/pages/tripPlanner.html?bgImage=/images/trend11.jpg">Iguazú Falls, Argentina</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="colcity">
-                        <div class="card">
-                            <img src="/images/trend12.jpg" class="card-img-top" alt="...">
-                            <div class="card-img-overlay d-flex align-items-center justify-content-center">
-                                <a class="nav-link" href="/pages/tripPlanner.html?bgImage=/images/trend12.jpg">Octávio Frias de Oliveira Bridge, Brazil</a>
-                            </div>
+                    <div class="card">
+                        <img src="/images/trend12.jpg" class="card-img-top" alt="...">
+                        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+                            <a class="nav-link" href="/pages/tripPlanner.html?bgImage=/images/trend12.jpg">Octávio Frias de Oliveira Bridge, Brazil</a>
                         </div>
                     </div>
                 </div>
@@ -571,5 +571,6 @@
         </div>
     </div>
 
+    <script src="/js/toggle.js"></script>
 </body>
 </html>

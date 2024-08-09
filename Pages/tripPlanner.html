@@ -15,7 +15,7 @@
 </head>
 <body>
     <!-- header part -->
-    <div id="header" class="sticky-top">
+    <div id="header">
         <div class="container">
             <div class="row">
                 <nav class="navbar navbar-expand-lg w-100">
@@ -42,39 +42,46 @@
                     <h2 id="adding">Add Destination</h2>
                 </div>
                 <div class="row">
-                    <div class="col-6">
-                        <form id="DestinationForm">
-                            <div class="row mb-3">
+                    <form id="DestinationForm">
+                        <div class="row">
+                            <div class="col-md-2">
                                 <label for="name" class="form-label">Destination Name:</label>
                                 <input type="text" class="form-control dclass" id="name" name="name">
                                 <div class="invalid-feedback" id="nameFeedback">Please enter a destination name.</div>
                             </div>
-                            <div class="row mb-3">
+                            <div class="col-md-2">
                                 <label for="sdate" class="form-label">Start Date:</label>
                                 <input type="date" class="form-control dclass" id="sdate" name="sdate">
                                 <div class="invalid-feedback" id="sFeedback">Please enter a start date.</div>
                             </div>
-                            <div class="row mb-3">
+                            <div class="col-md-2">
                                 <label for="edate" class="form-label">End Date:</label>
                                 <input type="date" class="form-control dclass" id="edate" name="edate">
                                 <div class="invalid-feedback" id="eFeedback">Please enter a end date.</div>
                             </div>
-                            <div class="row mb-3">
-                                <label for="activities" class="form-label">Activities:</label>
-                                <textarea name="activities" id="activities" class="form-control dclass"></textarea>
+                            <div class="col-md-2">
+                                <label for="activities" class="form-label">Activitiy:</label>
+                                <select name="activities" id="activities" class="form-select dclass" aria-label="Default select example">
+                                    <option value="activities">Camping</option>
+                                    <option value="activities">Hiking</option>
+                                    <option value="activities">Surfing</option>
+                                    <option value="activities">Paragliding</option>
+                                    <option value="activities">Boat Tours</option>
+                                    <option value="activities">Cycling</option>
+                                    <option value="activities">Fishing</option>
+                                </select>
+                                <!-- <textarea name="activities" id="activities" class="form-control dclass"></textarea> -->
                                 <div class="invalid-feedback" id="actFeedback">Please enter a activity.</div>
                             </div>
-                            <div class="row mb-3">
+                            <div class="col-md-2">
                                 <label for="notes" class="form-label">Notes:</label>
-                                <textarea name="notes" id="notes" class="form-control dclass"></textarea>
+                                <input type="text" name="notes" id="notes" class="form-control dclass">
                             </div>
-                            <div class="row"> 
-                                <div class="col-6">
-                                    <button type="submit" class="btn btne"><i class="fa-solid fa-plus"></i> Add</button>
-                                </div>
+                            <div class="col-md-2 pt-4" id="button">
+                                <button type="submit" class="btn btne">Add</button>
                             </div>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
                 </div>   
             </div>
         <!-- </div> -->
@@ -84,22 +91,29 @@
      <div id="fourth_part">
         <div class="container">
             <div class="row sectionShow">
-                <h2 id="adding">Your Ventures</h2>
+                <div class="col-md-6">
+                    <h2 id="adding">Your Ventures</h2>
+                </div>
+                <!-- filtering -->
+                <div class="col-md-6 filt">
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6 filter">
+                            <label for="filter" class="form-label">Filter by Start Date:</label>
+                            <input type="date" class="form-control fclass" id="filterDate" name="filter">
+                        </div>
+                        <div class="col-md-3 fbutton pt-5">
+                            <button class="btn fbtne" id="fbutton"><i class="fa-solid fa-filter"></i>  Filter</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="row">
                 <!-- <div class="col-6"> -->
                     <div id="DestinationList">
+                        <p>Your Plans display here...</p>
                     </div>
                 <!-- </div> -->
-
-                <!-- filtering -->
-                <div class="col-md-2 col-sm-3 filter">
-                    <label for="filter" class="form-label">Filter by Start Date:</label>
-                    <input type="date" class="form-control fclass" id="filterDate" name="filter">
-                </div>
-                <div class="fbutton">
-                    <button class="btn fbtne" id="fbutton"><i class="fa-solid fa-filter"></i>  Filter</button>
-                </div>
             </div>
         </div>
      </div>
